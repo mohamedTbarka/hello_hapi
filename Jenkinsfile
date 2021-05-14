@@ -5,7 +5,7 @@ pipeline {
     agent {
         docker {
             image 'node'
-            args '-u root:sudo'
+            args '-u root:sudo /home/jenkins/workspaces/arcadian'
         }
     }
 
